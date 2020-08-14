@@ -6,7 +6,7 @@ function generatePassword() {
   alert("You will select password criteria");
   do var charCount = prompt("how many characters does it need to be? Min 8 Max 128.");
   while (charCount > 128 || charCount < 8)
-  if (!Number.isInteger(charCount)) {
+  if (Number.isInteger(charCount)) {
     do var charCount = prompt("how many characters does it need to be? Min 8 Max 128.");
   while (charCount > 128 || charCount < 8)
   }
